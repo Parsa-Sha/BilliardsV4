@@ -11,6 +11,10 @@
 //     8 ball in pocket is loss, unless all of that team's balls are gone
 //     Cueball must collide with ball of own team, or else scratch
 
+// Bug fixes:
+//   Fix garbage holes
+//   Fix newgame to reset ball positions
+
 import fisica.*;
 
 FWorld world;

@@ -9,6 +9,8 @@ void intro() {
     hover = 5;
   }
   
+  if (newGame) newGame();
+  
   fill(0);
   textSize(50);
   textAlign(CENTER, CENTER);

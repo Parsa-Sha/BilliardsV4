@@ -16,8 +16,6 @@ void game() {
   rect(910, 135, 10, 325);
   ellipse(60, 115, 26, 26);
   */
-
-  if (newGame) newGame();
   
   world.step();
   world.draw();
