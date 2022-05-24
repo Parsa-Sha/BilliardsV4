@@ -6,7 +6,7 @@
 //   Fix velocity code
 //   Add two players & solids/stripes teams
 //   Add scratch
-//   Add two stage 'Pocketed' balls
+//   Edit it so that cue ball does not get deleted, only becomes scratch
 //   Add rules:
 //     8 ball in pocket is loss, unless all of that team's balls are gone
 //     Cueball must collide with ball of own team, or else scratch

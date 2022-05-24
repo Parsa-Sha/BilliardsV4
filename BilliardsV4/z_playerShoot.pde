@@ -1,4 +1,4 @@
-  PVector mouseStart, mouseEnd, velocity;
+PVector mouseStart, mouseEnd, velocity;
 boolean hasPressed;
 float rotationPressed;
 float testVelocity;
@@ -8,8 +8,10 @@ float angle;
 PVector beginPressed, endPressed;
 PVector newVel;
 
-void playerShoot() { // We will get back to the shooting code, don't worry about this
-  /*
+PVector finalVelocity;
+
+void playerShoot() { // We will get back to the shooting code, don't worry about this; Edit: We're back, time to deal with this mess
+  
   pushMatrix();
   translate(myBalls.get(0).pos.x, myBalls.get(0).pos.y);
   rotate(atan2(mouseY - myBalls.get(0).pos.y, mouseX - myBalls.get(0).pos.x) * int(!hasPressed));
@@ -17,7 +19,7 @@ void playerShoot() { // We will get back to the shooting code, don't worry about
   translate(20, -6); // Incorporate length of mouse dragged
   if (abs(myBalls.get(0).vel.x) < 0.01 && abs(myBalls.get(0).vel.y) < 0.01) image(stick, 0, 0);
   popMatrix();
-  */
+  
 }
 
 void mousePressed() { // Rotate origin, mouseDragged ignoring Y changes, only X. Take X change, rotate back, and then apply velocity
@@ -33,6 +35,9 @@ void mousePressed() { // Rotate origin, mouseDragged ignoring Y changes, only X.
       popMatrix();
     }
     */
+    
+    
+    finalVelocity.x = atan2(mouseY - myBalls.get(0).pos.y, mouseX - myBalls.get(0).pos.x);
     
     beginPressed = new PVector(mouseX, mouseY);
   }
